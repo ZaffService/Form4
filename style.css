@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sans-serif";
+}
+
+section{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+section .imgBox{
+    position: relative;
+    margin-left: 17%;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(to right, transparent,#07c40461), url(form1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+section .contentBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+section .contentBox .formBox h2{
+    color: #607d8b;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #07C404;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.inputBx{
+    margin-bottom: 20px;
+}
+
+.inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607d8b;
+    font-weight: 300;
+    letter-spacing: 1px;  
+}
+
+.inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    letter-spacing: 1px;
+    color: #607d8b;
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.inputBx input[type="submit"]{
+    background-color: #07C404;
+    color: white;
+    outline: none;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer; 
+}
+
+.inputBx input[type="submit"]:hover{
+    background-color: #07c4045d;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remember{
+    margin-bottom: 10px;
+    color: #607d8b;
+    font-weight: 400; 
+    font-size: 14px;
+}
+
+.inputBx p{
+    color: #607d8b;
+    text-align: center;
+}
+
+.inputBx p a{
+    color: #07C404;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 2px;
+    background-color:#07C404;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .progress-text {
+    padding: 5px 0;
+    background-color: #07C404;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .progress-bar::before {
+    content: '';
+    display: block;
+    width: calc(5500% / 100);
+    height: 100%;
+    background-color: #07C404;
+    border-radius: 10px;
+  }
+  
+
+
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin: 0 28px; 
+    box-shadow: 0 15px 20px #ABB2B9;
+}
+
+
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: -10%;
+    border-right: 2px solid rgba(105, 105, 105, 0.568);
+}
+
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.input-box label, .gender-title{
+    width: 95%;
+    color: #2f4f4f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.input-box label{
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.gender-title{
+    font-size: 16px;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 12px; /* Taille du point radio */
+    height: 12px; /* Taille du point radio */
+    border-radius: 50%;
+    background-color: #07C404; /* Couleur verte */
+  }
+  
+
+
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-box input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+}
+
+.gender-category{
+    color: grey;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+    font-size: 14px;
+}
+
+.gender-category label, .gender-category input{
+    cursor: pointer;
+}
+
+.alert{
+    font-size: 14px;
+    font-style: italic;
+    color: dimgray;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.button-container{
+    margin: 15px 0; 
+}
+
+.button-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa076b, #61045f);
+}
+
+.button-container button:hover{
+    background-image: linear-gradient(to right,  #61045f,  #aa076b);
+}
+
+.boutton{
+    margin-top: 10px;
+    margin-left: 70%;
+}
+
+.boutton .valider{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #07C404;
+    text-transform: uppercase;
+}
+.boutton .supprimer{
+    padding: 8px 10px;
+    border: 1px solid #07C404;
+    outline: none;
+    border-radius: 5px;
+    color: dimgray;
+    text-transform: uppercase;
+}
+
+input[type="text"]::placeholder {
+    margin-left: 10px; 
+    padding: 230px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+}
+
+
+
